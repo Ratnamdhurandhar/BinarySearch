@@ -13,16 +13,20 @@ public class search_insert_position {
 					ans=mid;
 				 high = mid-1;
 				}
-				else {low=mid+1;
+				else {
+					low=mid+1;
 			}
 			
 		}
+			if(low>high) {
+				return low;
+			}
 			return ans;
 	}
 	 
 	public static void main(String[] args) {
-		int[]arr= {2,5,10,12,15};
-		int n=5;int x=11;
+		int[]arr= {1,3,5,6};
+		int n=4;int x=9;
 		int abc = search (arr,n,x);
 		System.out.println(" "+abc);
 	}
