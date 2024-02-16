@@ -44,7 +44,7 @@ public class bookAllocation {
 	
 	
 	
-  public static int book(int[]arr,int m , int n){
+  public static int book(int[]arr,int m ){
 	  int low = 0;                           //search space is between 49 to 172
 	  int high = Arrays.stream(arr).sum();
 	   // first we check for exceptional cases like what if the no. of students is more than of books then we have to return -1;
@@ -70,8 +70,8 @@ public class bookAllocation {
   public static void main(String[] args) {
 	int []arr = {25,46,28,49,24};
 	int m=4;
-	int n=5;
-	int ans1 = book(arr,m,n);
+//	int n=5;
+	int ans1 = book(arr,m);
 	System.out.println(ans1);
   
   
